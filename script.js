@@ -17,7 +17,7 @@ function convertToRoman(num) {
 
   let result = '';
   for (let i = 0; i < arr.length; i++) {
-    const [symbol, value] = arr[i];
+    let [symbol, value] = arr[i];
     while (num >= value) {
       result += symbol;
       num -= value;
