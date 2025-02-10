@@ -17,10 +17,12 @@ function convertToRoman(num) {
 
   let result = '';
   for (let i = 0; i < arr.length; i++) {
-    let [symbol, value] = arr[i];
+    let symbol =arr[i][0]
+	  let value = arr[i][1]
     while (num >= value) {
-      result += symbol;
+      
       num -= value;
+		result += symbol;
     }
   }
 
