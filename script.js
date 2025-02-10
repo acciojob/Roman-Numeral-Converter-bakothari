@@ -15,9 +15,9 @@ function convertToRoman(num) {
 
   let result = '';
   for (let i = 0; i < arr.length; i++) {
-    let [symbol, value] = arr[i];
+    let [roman, value] = arr[i];
     while (num >= value) {
-      result += symbol;
+      result += roman;
       num -= value;
     }
   }
